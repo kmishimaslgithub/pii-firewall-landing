@@ -1121,8 +1121,8 @@ footer {
         <th>機能</th>
         <th class="highlight">🛡️ PII Firewall</th>
         <th>ChatWall</th>
-        <th>Wald.ai</th>
-        <th>Private AI</th>
+        <th>ACompany</th>
+        <th>EAGLYS</th>
       </tr>
     </thead>
     <tbody>
@@ -1168,6 +1168,20 @@ footer {
         <td><span class="cross">✗</span></td>
         <td><span class="cross">✗</span></td>
       </tr>
+<tr>
+                <td>秘密計算方式</td>
+                <td class="highlight">リアルタイム処理</td>
+                <td><span class="partial">バッチ処理</span></td>
+                <td><span class="partial">バッチ処理</span></td>
+                <td><span class="partial">バッチ処理</span></td>
+              </tr>
+              <tr>
+                <td>導入コスト目安</td>
+                <td class="highlight"><span class="check">従量課金（¥1〜）</span></td>
+                <td><span class="cross">月300万円〜</span></td>
+                <td><span class="cross">高額固定費</span></td>
+                <td><span class="cross">高額固定費</span></td>
+              </tr>
       <tr>
         <td>完全ローカル処理</td>
         <td class="highlight"><span class="check">✓</span></td>
@@ -1190,6 +1204,12 @@ footer {
 
 <!-- Screenshots -->
 <section id="demo" class="screenshot-section">
+<div style="text-align:center;margin-bottom:40px;" class="fade-in">
+    <a href="https://pii-firewall-ochre.vercel.app/login" target="_blank" style="display:inline-flex;align-items:center;gap:10px;padding:16px 36px;border-radius:10px;background:var(--accent);color:#000;font-weight:700;font-size:16px;text-decoration:none;transition:all .2s;">
+      🚀 デモアプリを今すぐ試す
+    </a>
+    <p style="margin-top:12px;font-size:13px;color:var(--muted);">登録不要・無料・ブラウザで即起動</p>
+  </div>
   <span class="section-label fade-in">// デモ</span>
   <h2 class="section-title fade-in">実際の動作画面</h2>
   <p class="section-desc fade-in" style="margin:0 auto">
@@ -1295,21 +1315,51 @@ footer {
   </p>
 
   <div class="pricing-grid">
-    <div class="pricing-card fade-in">
-      <div class="pricing-plan">Starter</div>
-      <div class="pricing-price">¥3,000<span>/月</span></div>
-      <p class="pricing-desc">個人事業主・フリーランス向け。基本的なPII保護が必要な方に。</p>
-      <ul class="pricing-features">
-        <li>PIIマスク（基本10種類）</li>
-        <li>XOR秘密分散</li>
-        <li>ChatGPT / Claude / Gemini対応</li>
-        <li>PDF・Word対応</li>
-        <li>月間500リクエストまで</li>
-        <li class="disabled">差分プライバシー</li>
-        <li class="disabled">カスタムPIIルール</li>
-      </ul>
-      <a href="#contact" class="btn-plan">14日間無料で試す</a>
-    </div>
+  <div class="pricing-card fade-in">
+    <div class="pricing-plan">Pay As You Go</div>
+    <div class="pricing-price">¥0<span>/初期費用</span></div>
+    <p class="pricing-desc">使った分だけ課金。月額固定なし。Stripe決済対応。</p>
+    <ul class="pricing-features">
+      <li>🔐 SECURED：1秘分 = 1クレジット（¥1）</li>
+      <li>🔓 RECOVERY：1復元 = 5クレジット（¥5）</li>
+      <li>ChatGPT / Claude / Gemini対応</li>
+      <li>PDF・Word・Excel対応</li>
+      <li>クレジットカード決済（Stripe）</li>
+      <li>最低利用額なし</li>
+    </ul>
+    <a href="#contact" class="btn-plan">無料で始める</a>
+  </div>
+
+  <div class="pricing-card featured fade-in">
+    <div class="pricing-plan">Business</div>
+    <div class="pricing-price">¥9,800<span>/月</span></div>
+    <p class="pricing-desc">月額プラン。毎月10,000クレジット付き。ヘビーユーザー向け。</p>
+    <ul class="pricing-features">
+      <li>毎月10,000クレジット付与</li>
+      <li>🔐 SECURED：1秘分 = 1cr</li>
+      <li>🔓 RECOVERY：1復元 = 4cr</li>
+      <li>全ファイル形式対応</li>
+      <li>差分プライバシー（数値保護）</li>
+      <li>超過分は従量課金</li>
+    </ul>
+    <a href="#contact" class="btn-plan featured">14日間無料で試す</a>
+  </div>
+
+  <div class="pricing-card fade-in">
+    <div class="pricing-plan">Enterprise</div>
+    <div class="pricing-price">要相談<span></span></div>
+    <p class="pricing-desc">法律事務所・会計事務所・コンサル会社向け。大量利用割引あり。</p>
+    <ul class="pricing-features">
+      <li>大量利用割引（1cr = 0.5円〜）</li>
+      <li>カスタムPIIルール</li>
+      <li>専任サポート</li>
+      <li>請求書払い対応</li>
+      <li>SLA保証</li>
+      <li>オンプレミス対応相談可</li>
+    </ul>
+    <a href="#contact" class="btn-plan">お問い合わせ</a>
+  </div>
+</div>
 
     <div class="pricing-card featured fade-in">
       <div class="pricing-plan">Professional</div>
@@ -1319,7 +1369,7 @@ footer {
         <li>PIIマスク（全15種類）</li>
         <li>XOR秘密分散</li>
         <li>ChatGPT / Claude / Gemini対応</li>
-        <li>PDF・Word対応</li>
+        <li>PDF・Word・Excel・html等90％形式対応</li>
         <li>月間5,000リクエストまで</li>
         <li>差分プライバシー（数値保護）</li>
         <li class="disabled">カスタムPIIルール</li>
@@ -1335,7 +1385,7 @@ footer {
         <li>PIIマスク（全種類＋カスタム）</li>
         <li>XOR秘密分散</li>
         <li>全AI対応＋カスタムAI連携</li>
-        <li>PDF・Word・Excel対応</li>
+        <li>PPDF・Word・Excel・html等90％形式対応<</li>
         <li>リクエスト無制限</li>
         <li>差分プライバシー（数値保護）</li>
         <li>カスタムPIIルール</li>
@@ -1409,8 +1459,8 @@ footer {
           <label>ご興味のあるプラン</label>
           <select>
             <option value="">選択してください</option>
-            <option>Starter（¥3,000/月）</option>
-            <option>Professional（¥9,800/月）</option>
+            <option>無料アーリーアクセス</option>
+            <option>基本従量制</option>
             <option>Enterprise（要相談）</option>
           </select>
         </div>
